@@ -615,7 +615,7 @@ ul {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	width: 3%;
+	width: 50px;
 	list-style: none;
 	padding-left: 0;
   }
