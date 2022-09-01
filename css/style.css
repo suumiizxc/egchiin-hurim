@@ -446,7 +446,7 @@ img {
 * {
 	/* margin: 0;
     padding: 0; */
-	font-family: 'Arvo', serif;
+	font-family: 'Montserant', serif;
 }
 
 body {
@@ -564,6 +564,14 @@ a {
 	margin-bottom: 24px;
 }
 
+.production {
+	color: #2e4b6b;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
 .twitter {
 	color: #874562;
 }
@@ -576,4 +584,50 @@ a {
 	display: flex;
 	font-size: 12px;
 	letter-spacing: 0pt;
+}
+
+.bride-icon {
+	background: url('../invitation/bride.png');
+	/* height: 2px; */
+	width: 2px;
+	/* display: block; */
+}
+
+.groom-icon {
+	background: url('../invitation/groom.png');
+	/* height: 1px; */
+	width: 1px;
+	display: inline-block;
+}
+
+ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 3%;
+	list-style: none;
+	padding-left: 0;
+  }
+
+.facebook:hover {
+	display:inline-block;
+  -ms-transform: scale(1.61803398875, 1.61803398875); /* IE 9 */
+    -webkit-transform: scale(1.61803398875, 1.61803398875); /* Safari */
+    transform: scale(1.61803398875, 1.61803398875);
+}
+
+.instagram:hover {
+	display:inline-block;
+  -ms-transform: scale(1.61803398875, 1.61803398875); /* IE 9 */
+    -webkit-transform: scale(1.61803398875, 1.61803398875); /* Safari */
+    transform: scale(1.61803398875, 1.61803398875);
 }
