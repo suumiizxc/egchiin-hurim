@@ -49,7 +49,7 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("time").innerHTML = "<div class='new-class'  style='text-align: center;'> бидний ураг батжиж <br/> Уригдсан таны ерөөл орших болтугай </div>";
+        document.getElementById("time").innerHTML = "<div class='new-class'  style='text-align: center;'> Урьсан бидний ураг батжиж <br/> Уригдсан таны ерөөл орших болтугай </div>";
     }
 }, 1000);
 
