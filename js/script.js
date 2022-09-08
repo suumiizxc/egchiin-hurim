@@ -22,7 +22,8 @@
  */
 $(document).on('click', function(){
     document.getElementById("my_audio").play();
-    console.log('Shaadi me zaroor aana');
+    console.log('test', window.innerWidth);
+
 });
 
 // Set the date we're counting down to
@@ -44,6 +45,12 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
+    console.log("test 123")
+    if(window.innerWidth < 900) {
+        document.getElementById("superlogo").innerHTML = "<img src='superlogo.jpg'>"
+    } else {
+        document.getElementById("superlogo").innerHTML = "<img src='superlogo-fin.png'>"
+    }
     document.getElementById("time").innerHTML = "<div class='container'><div class='days block'>"+ days + "<br>Days</div>" + "<div class='hours block'>" + hours + "<br>Hours</div>" + "<div class='minutes block'>" + minutes + "<br>Minutes</div>" + "<div class='seconds block'>" + seconds + "<br>Seconds</div></div>";
     
     // If the count down is over, write some text 
@@ -93,3 +100,4 @@ console.log(
     `%cShaadi me zaroor aana!\n\n`,
     'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
 )
+
