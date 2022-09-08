@@ -484,6 +484,24 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.venueupper {
+	width: auto;
+	height: auto;
+	background-color: #674ea7;
+	border-radius: 30px;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+	margin-right: 8px;
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.venueupper a {
+	text-decoration: none;
+	color: #fff;
+}
+
 .venue a {
 	text-decoration: none;
 	color: #fff;
@@ -583,6 +601,12 @@ a {
 }
 
 .actions {
+	display: flex;
+	font-size: 12px;
+	letter-spacing: 0pt;
+}
+
+.actionupper {
 	display: flex;
 	font-size: 12px;
 	letter-spacing: 0pt;
