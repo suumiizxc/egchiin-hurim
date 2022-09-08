@@ -26,6 +26,18 @@ $(document).on('click', function(){
 
 });
 
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    console.log( "ready!" );
+    console.log("test 123")
+    if(window.innerWidth < 900) {
+        document.getElementById("superlogo").innerHTML = "<img src='superlogo.jpg'>"
+    } else {
+        document.getElementById("superlogo").innerHTML = "<img src='superlogo-fin.png'>"
+    }
+});
+
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 29, 2020 00:00:00").getTime();
 
@@ -45,12 +57,7 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    console.log("test 123")
-    if(window.innerWidth < 900) {
-        document.getElementById("superlogo").innerHTML = "<img src='superlogo.jpg'>"
-    } else {
-        document.getElementById("superlogo").innerHTML = "<img src='superlogo-fin.png'>"
-    }
+    
     document.getElementById("time").innerHTML = "<div class='container'><div class='days block'>"+ days + "<br>Days</div>" + "<div class='hours block'>" + hours + "<br>Hours</div>" + "<div class='minutes block'>" + minutes + "<br>Minutes</div>" + "<div class='seconds block'>" + seconds + "<br>Seconds</div></div>";
     
     // If the count down is over, write some text 
