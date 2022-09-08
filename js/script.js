@@ -27,8 +27,6 @@ $(document).on('click', function(){
 });
 
 
-// A $( document ).ready() block.
-$( document ).ready(function() {
     console.log( "ready!" );
     console.log("test 123")
     if(window.innerWidth < 900) {
@@ -36,7 +34,7 @@ $( document ).ready(function() {
     } else {
         document.getElementById("superlogo").innerHTML = "<img src='superlogo-fin.png'>"
     }
-});
+
 
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 29, 2020 00:00:00").getTime();
