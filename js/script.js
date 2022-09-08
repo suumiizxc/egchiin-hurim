@@ -30,7 +30,7 @@ $(document).on('click', function(){
     console.log( "ready!" );
     console.log("test 123")
     if(window.innerWidth < 900) {
-        document.getElementById("superlogo").innerHTML = "<img src='superlogo.jpg'>"
+        document.getElementById("superlogo").innerHTML = "<img src='superlogo.png'>"
     } else {
         document.getElementById("superlogo").innerHTML = "<img src='superlogo-fin.png'>"
     }
