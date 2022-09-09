@@ -22,18 +22,33 @@
  */
 $(document).on('click', function(){
     document.getElementById("my_audio").play();
-    console.log('test', window.innerWidth);
-
+    
+    window.open("http://139.59.235.123")
 });
 
+document.getElementById("seemap").onclick= function() {
+    window.open("https://www.google.com/maps/place/MPM+Event+Hall/@47.9131429,106.9264001,17z/data=!3m1!4b1!4m5!3m4!1s0x5d9693bb3fdb2ee7:0x4ef24e733048c446!8m2!3d47.9130232!4d106.9286007")
+}
 
-    console.log( "ready!" );
-    console.log("test 123")
-    if(window.innerWidth < 900) {
-        document.getElementById("superlogo").innerHTML = "<img src='superlogo.png'>"
-    } else {
-        document.getElementById("superlogo").innerHTML = "<img src='superlogo-fin.png'>"
-    }
+console.log( "ready!" );
+console.log("test 123")
+if(window.innerWidth < 900) {
+    document.getElementById("superlogo").innerHTML = "<img src='superlogo.png'>"
+    //  sleep(5000)
+    // window.location.href="http://139.59.235.123"
+} else {
+    document.getElementById("superlogo").innerHTML = "<img src='superlogo-fin.png'>"
+    // sleep(5000)
+    // window.location.href="http://139.59.235.123"
+}
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
 
 
 // Set the date we're counting down to
